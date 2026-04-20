@@ -1,0 +1,10 @@
+[
+  { "theme": "workout", "description": "High-energy songs with strong rhythm and motivating hooks." },
+  { "theme": "study", "description": "Low-distraction tracks with steady mood and moderate tempo." },
+  { "theme": "late night", "description": "Cinematic and atmospheric songs for night listening." },
+  { "theme": "road trip", "description": "Uplifting songs with momentum and sing-along value." },
+  { "theme": "party", "description": "Dance-forward songs with immediate hooks and high energy." },
+  { "theme": "rainy day", "description": "Reflective tracks with warm, emotional tone." },
+  { "theme": "heartbreak", "description": "Emotional songs focused on loss, healing, and introspection." },
+  { "theme": "morning boost", "description": "Bright and optimistic songs to start the day." }
+]

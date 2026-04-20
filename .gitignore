@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.log
+backend/TuneFinder.Api/bin/
+backend/TuneFinder.Api/obj/
+.env
+.env.local
+.env.*
+!.env.example

@@ -1,0 +1,14 @@
+[
+  { "title": "Midnights", "artist": "Taylor Swift", "summary": "Late-night pop record centered on anxiety, self-reflection, and polished synth production.", "genre": "Pop" },
+  { "title": "After Hours", "artist": "The Weeknd", "summary": "Dark synth-pop concept album balancing heartbreak themes with neon retro production.", "genre": "Synth-Pop" },
+  { "title": "DAMN.", "artist": "Kendrick Lamar", "summary": "Grammy-winning hip-hop album with introspective lyricism and social commentary.", "genre": "Hip-Hop" },
+  { "title": "Future Nostalgia", "artist": "Dua Lipa", "summary": "Disco-pop revival album full of dance-forward hooks and modern polish.", "genre": "Dance-Pop" },
+  { "title": "Punisher", "artist": "Phoebe Bridgers", "summary": "Indie album known for detailed storytelling and emotionally nuanced writing.", "genre": "Indie Rock" },
+  { "title": "AM", "artist": "Arctic Monkeys", "summary": "Groove-heavy rock album blending riff-driven songwriting with moody atmosphere.", "genre": "Alternative Rock" },
+  { "title": "IGOR", "artist": "Tyler, The Creator", "summary": "Concept album mixing rap, soul, and electronic sounds around a breakup narrative.", "genre": "Alternative Rap" },
+  { "title": "SOS", "artist": "SZA", "summary": "Genre-blending R&B project featuring confessional lyrics and wide stylistic range.", "genre": "R&B" },
+  { "title": "Currents", "artist": "Tame Impala", "summary": "Psych-pop album built on synth textures, groove, and introspective songwriting.", "genre": "Psychedelic Pop" },
+  { "title": "Blonde", "artist": "Frank Ocean", "summary": "Minimal and experimental R&B album with poetic writing and fluid structure.", "genre": "Alternative R&B" },
+  { "title": "AUSTIN", "artist": "Post Malone", "summary": "Melodic pop-rock album emphasizing live instrumentation and reflective lyrics.", "genre": "Pop Rock" },
+  { "title": "GUTS", "artist": "Olivia Rodrigo", "summary": "Pop-rock album balancing biting humor, emotional honesty, and energetic choruses.", "genre": "Pop Rock" }
+]
