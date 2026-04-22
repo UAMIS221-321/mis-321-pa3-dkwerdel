@@ -1,8 +1,28 @@
 body {
   min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
 }
 
 .chat-log {
   max-height: 60vh;
   overflow-y: auto;
+}
+
+.app-shell {
+  background-color: #f8fafc;
+}
+
+.app-header {
+  background: linear-gradient(120deg, #111827, #312e81);
+}
+
+.user-bubble {
+  background: linear-gradient(120deg, #2563eb, #3b82f6);
+  max-width: min(85%, 720px);
+}
+
+.assistant-bubble {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  max-width: min(85%, 720px);
 }

@@ -6,7 +6,7 @@ const state = {
   messages: [
     {
       role: "assistant",
-      text: "I am TuneFinder AI. Ask me for mood-based songs, similar artists, playlists, or artist info."
+      text: "Welcome to TuneFinderAI. Ask me for mood-based songs, similar artists, playlists, or artist info."
     }
   ]
 };
@@ -19,30 +19,38 @@ function renderApp() {
   container.className = "container py-4";
 
   const card = document.createElement("div");
-  card.className = "card shadow-sm";
+  card.className = "card shadow-lg border-0 app-shell";
 
   const cardHeader = document.createElement("div");
-  cardHeader.className = "card-header bg-dark text-white";
+  cardHeader.className = "card-header border-0 app-header text-white";
   cardHeader.innerHTML = `
-    <h1 class="h5 mb-1">TuneFinder AI</h1>
-    <p class="mb-0 small text-white-50">LLM + RAG + Function Calling Music Discovery Assistant</p>
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div>
+        <h1 class="h4 mb-1 fw-bold">TuneFinderAI</h1>
+        <p class="mb-0 small text-white-50">Discover songs, artists, genres, and playlists with AI.</p>
+      </div>
+      <span class="badge rounded-pill text-bg-light">Now Playing: Discovery Mode</span>
+    </div>
   `;
 
   const cardBody = document.createElement("div");
   cardBody.className = "card-body";
 
   const chatLog = document.createElement("div");
-  chatLog.className = "chat-log border rounded p-3 bg-white mb-3";
+  chatLog.className = "chat-log rounded p-3 bg-white mb-3 border";
 
   state.messages.forEach((msg) => {
     const wrapper = document.createElement("div");
-    wrapper.className = "mb-3";
+    wrapper.className =
+      msg.role === "user"
+        ? "mb-3 d-flex flex-column align-items-end"
+        : "mb-3 d-flex flex-column align-items-start";
 
     const bubble = document.createElement("div");
     bubble.className =
       msg.role === "user"
-        ? "alert alert-primary mb-1"
-        : "alert alert-secondary mb-1";
+        ? "mb-1 px-3 py-2 rounded-3 text-white user-bubble"
+        : "mb-1 px-3 py-2 rounded-3 assistant-bubble";
     bubble.textContent = msg.text;
 
     const label = document.createElement("small");
@@ -61,23 +69,30 @@ function renderApp() {
   const input = document.createElement("input");
   input.type = "text";
   input.name = "message";
-  input.className = "form-control";
+  input.className = "form-control form-control-lg";
   input.placeholder = "Ask for recommendations, playlists, or artist details...";
   input.required = true;
   input.disabled = state.loading;
 
   const button = document.createElement("button");
   button.type = "submit";
-  button.className = "btn btn-dark";
+  button.className = "btn btn-dark btn-lg px-4";
   button.disabled = state.loading;
   button.textContent = state.loading ? "Thinking..." : "Send";
 
   form.appendChild(input);
   form.appendChild(button);
 
-  const helper = document.createElement("p");
-  helper.className = "text-muted small mt-2 mb-0";
-  helper.textContent = "Demo prompts: 'Make me a workout playlist', 'Artists like SZA', 'Explain indie rock'.";
+  const helper = document.createElement("div");
+  helper.className = "mt-2";
+  helper.innerHTML = `
+    <p class="text-muted small mb-1">Try one of these:</p>
+    <div class="d-flex flex-wrap gap-2">
+      <span class="badge text-bg-secondary">Make me a workout playlist</span>
+      <span class="badge text-bg-secondary">Artists like SZA</span>
+      <span class="badge text-bg-secondary">Explain indie rock</span>
+    </div>
+  `;
 
   cardBody.appendChild(chatLog);
   cardBody.appendChild(form);
