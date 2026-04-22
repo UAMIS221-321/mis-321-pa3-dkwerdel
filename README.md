@@ -7,6 +7,12 @@ This project demonstrates:
 - RAG (retrieval-augmented generation) from a curated music knowledge base
 - Function calling with music tools
 
+## Live Demo
+
+- Open the app: `https://tunefinderai.netlify.app`
+- No local setup is required for normal use.
+- Type a prompt in chat and the deployed backend handles responses.
+
 ## Tech Stack
 
 - Frontend: `HTML + Bootstrap 5 + vanilla JS`
@@ -40,6 +46,11 @@ This project demonstrates:
 ├─ .env.example
 └─ README.md
 ```
+
+## Run Instructions
+
+- Open the app in your browser:
+  - `https://tunefinderai.netlify.app`
 
 ## Database Schema
 
